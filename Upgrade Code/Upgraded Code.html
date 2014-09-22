@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <head>
+    <title>
+      Time to Fly!
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="css/upgradeGame.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <!-- body background will be black -->
+  <body>
+    
+
+    <!-- main container, with a thin green border and black background image with alpha centauri on the right -->
+    <div id="gameContainer">
+      <!-- header image -->
+      <div id="header">
+        <h1>RACE TO ALPHA CENTAURI</h1>
+      </div>
+      
+      <!-- body of the game, list of ships, with a trail behind them of different colors -->
+      <div id="boardContainer">
+        <div id="leftPanel">
+          <div id="ship1Status" class="shipStats"></div>
+          <div id="ship2Status" class="shipStats"></div>
+          <div id="ship3Status" class="shipStats"></div>
+          <div id="ship4Status" class="shipStats"></div>
+        </div>
+        <div id="gameBoard">
+          <div class="shipTrack" id="ship1Track">
+            <div class="shipTail" style="background-color: green;"></div>
+            <div class="shipModel" id="ship1Model"></div>
+          </div>
+          <div class="shipTrack" id="ship2Track">
+            <div class="shipTail" style="background-color: blue;"></div>
+            <div class="shipModel" id="ship2Model"></div>
+          </div>
+          <div class="shipTrack" id="ship3Track">
+            <div class="shipTail" style="background-color: red;"></div>
+            <div class="shipModel" id="ship3Model"></div>
+          </div>
+          <div class="shipTrack" id="ship4Track">
+            <div class="shipTail" style="background-color: white;"></div>
+            <div class="shipModel" id="ship4Model"></div>
+          </div>
+        </div>
+      </div>
+      <!-- click button to move them -->
+      <div id="startButton">
+        <h2>Let's Fly!</h2>
+      </div>
+
+    </div>
+    <script src="js/upgradeGame.js"></script>
+  </body>
+</html>
